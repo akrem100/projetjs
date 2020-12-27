@@ -1,0 +1,109 @@
+html {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    padding:0;
+}
+
+.container {
+    display: flex;
+    background: rgb(34,32,32);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.video {
+    width: 100%;
+}
+
+.LecteurVideo {
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.controls {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    background: rgba(0,0,0,0.7);
+
+    transform: translateY(100%) translateY(-5px);
+    transition: all 0.2s;
+}
+
+.LecteurVideo:hover .controls {
+    transform: translateY(0);
+}
+
+
+.buttons {
+    padding: 10px;
+    width: 1000px;
+}
+
+
+.buttons button {
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: #fff;
+}
+
+#mute img {
+    height: 15px;
+}
+
+
+#play img{
+    height: 15px;
+}
+
+#play img :hover{
+ opacity: 0.2;
+}
+
+
+#pause img {
+    height: 15px;
+}
+#backward img {
+    height: 15px;
+}
+
+#forward img {
+    height: 15px;
+}
+
+#volumeSlider {
+    margin-left: 20px;
+}
+
+#full-screen img {
+    height: 15px;
+    margin-right: -900px;
+
+}
+
+
+
+
+.chargement-container {
+    height: 10px;
+    width: 100%;
+    background: #000;
+    cursor: pointer;
+}
+
+.chargement-bar {
+    height: 10px;
+    background-color: grey;
+}

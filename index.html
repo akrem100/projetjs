@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecteur Video</title>
+
+
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="LecteurVideo">
+            <video src="v.mp4" class="video"></video>
+
+            <div class="controls">
+                <div class="chargement-container">
+                    <div class="chargement-bar"></div>
+                </div>
+
+                <div class="buttons">
+                    <button id="backward"><img src="backward.png"></button>
+                    <button id="play"><img src="play.png"></button>
+                    <button id="pause"><img src="pause.png"></button>
+                    <button id="forward"><img src="forward.png"></button>
+
+                    
+                        
+                    <button id="mute"><img src ="soundd.png" id="imagee" onclick="changerImg()" > </button>
+
+                    <input type="range" id="volumeSlider" type="range" min="0" max="100" value="50" step="1">
+                    <button id="full-screen"><img src="fullscreen.png"> </button>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
